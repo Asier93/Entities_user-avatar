@@ -17,7 +17,7 @@ class UsersType extends AbstractType
             ->add('name')
             ->add('avatar', EntityType::class, [
                 'class' => Avatars::class,
-                'choice_label' => 'id',
+                'choice_label' => 'AvatarCharacter',
                 'multiple' => true,
             ])
         ;

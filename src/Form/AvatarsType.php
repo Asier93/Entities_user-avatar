@@ -14,14 +14,14 @@ class AvatarsType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options): void
     {
         $builder
-            ->add('Character')
+            ->add('AvatarCharacter')
             ->add('description')
             ->add('url')
-            ->add('user', EntityType::class, [
-                'class' => Users::class,
-                'choice_label' => 'id',
-                'multiple' => true,
-            ])
+            // ->add('user', EntityType::class, [
+            //     'class' => Users::class,
+            //     'choice_label' => 'id',
+            //     'multiple' => true,
+            // ])
         ;
     }
 

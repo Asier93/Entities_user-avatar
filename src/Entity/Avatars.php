@@ -16,9 +16,10 @@ class Avatars
     #[ORM\GeneratedValue]
     #[ORM\Column]
     private ?int $id = null;
+    
 
     #[ORM\Column(length: 255)]
-    private ?string $Character = null;
+    private ?string $AvatarCharacter = null;
 
     #[ORM\Column(length: 255, nullable: true)]
     private ?string $description = null;
@@ -27,7 +28,7 @@ class Avatars
     private ?string $url = null;
 
     #[ORM\ManyToMany(targetEntity: Users::class, mappedBy: 'avatar')]
-    private Collection $user;
+    private ?Collection $user;
 
     public function __construct()
     {
@@ -39,14 +40,14 @@ class Avatars
         return $this->id;
     }
 
-    public function getCharacter(): ?string
+    public function getAvatarCharacter(): ?string
     {
-        return $this->Character;
+        return $this->AvatarCharacter;
     }
 
-    public function setCharacter(string $Character): static
+    public function setAvatarCharacter(string $AvatarCharacter): static
     {
-        $this->Character = $Character;
+        $this->AvatarCharacter = $AvatarCharacter;
 
         return $this;
     }
@@ -78,7 +79,7 @@ class Avatars
     /**
      * @return Collection<int, Users>
      */
-    public function getUser(): Collection
+    public function getUser(): ?Collection
     {
         return $this->user;
     }
