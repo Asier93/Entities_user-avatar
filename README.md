@@ -10,9 +10,9 @@ Este proyecto Symfony se centra en la gestión de usuarios y la asociación de a
 - Composer para la gestión de dependencias
 
 ## Uso
-Registro de Usuarios: Implementa un formulario para registrar nuevos usuarios.
-Asignación de Avatares: Permite a los usuarios seleccionar o subir sus avatares.
-Gestión de Relaciones: Utiliza Doctrine para gestionar las relaciones entre tablas de usuarios y avatares.
+Registro de usuarios: Implementa un formulario para registrar, editar o eliminar nuevos usuarios.
+Asignación de avatares: Implementa un formularrio para registrar, editar o eliminar nuevos avatares relacionados al usuario.
+Gestión de relaciones: Utiliza Doctrine para gestionar las relaciones entre tablas de usuarios y avatares.
 
 ## Instalación
 
