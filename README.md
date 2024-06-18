@@ -9,7 +9,7 @@ Este proyecto Symfony se centra en la gestión de usuarios y la asociación de a
 - Symfony 6.4
 - Composer para la gestión de dependencias
 
-##Uso
+## Uso
 Registro de Usuarios: Implementa un formulario para registrar nuevos usuarios.
 Asignación de Avatares: Permite a los usuarios seleccionar o subir sus avatares.
 Gestión de Relaciones: Utiliza Doctrine para gestionar las relaciones entre tablas de usuarios y avatares.
@@ -45,5 +45,5 @@ Abre tu navegador web y visita https://localhost:8000.
 Para ejecutar los tests unitarios:
 php bin/phpunit
 
-##Contribución
+## Contribución
 Contribuciones son bienvenidas. Por favor, abre un issue para reportar problemas o sugerir nuevas funcionalidades.
